@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/* header */
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;    
+}
+
+img[alt="logo"]{
+  width: 1vw;
+  height: 6vh;
+}
+
+header img{
+  padding: 1rem;
+  border-radius: 5em;
+  color: rgba(50, 50, 54, 0.3);
+  border: 0.1rem solid #000000;
+}
+
+header img::after{
+  content: "BL";
+  /* color: #000000; */
+}
+
+header img:hover{
+  background-color: rgba(50, 50, 54, 0.3);
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+/* section-home */
+.section-home{
+  position: relative;
+  top:5.8em;
+}
+
+.section-home figure{
+  background-image: url('../assets/images/lap.jpg');
+  outline: 1px solid red;
+  height: 70vh;
+  width: 98.9vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*style footer*/
+
+footer{
+  position: relative;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+footer h1{
+  font-size: 28px;
+  margin-bottom: 36px;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.footer-text {
+  display: inline-block;
+  margin: 30px;
+  max-width: 24%;
+  position: relative;
+  text-align: center;
+  left: 20px;
+}
+
+.container{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+footer p{
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;  
+}
+
+footer i{
+  border: 2px solid #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  margin-right: 5px;
+  padding: 15px;
+}
+
+#text-1{
+  top: auto;
+  bottom: 15px;
+}
+
+#text-2{
+  top: auto;
+  bottom: 25px;
+}
+
+#text-2 i:hover{
+  background-color: #fff;
+  color: #18bc9c;
+  transition-duration: 0.5s;
+}
+
+#text-3{
+  top: 8px;
+  bottom: auto;
+  left: 20px;
+}
+
+#text-3 a{
+  cursor: pointer;
+  color :#18bc9c;
+}
+
+#text-3 p a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#text-4{
+  padding: 25px;
+  font-family: 'Lato', sans-serif;  
+  text-align: center;
+}
+
+img[alt="about-img"]{
+  width: 60vw;
+}
+
+/* fin section-home */
+
+/* section-about */
+@media screen and (min-width:991px){
+  img[alt="about-img"]{
+    width: 30vw;
+  }
+}
