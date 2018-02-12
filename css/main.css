@@ -27,16 +27,32 @@ header nav ul a{
   color: #fff;
 }
 
+img[alt="about-img"]{
+  margin-top:0.6rem;
+  /* width: 12vw;
+  height: 30vh; */
+  max-width: 100%;
+  outline: 1ps solid red;
+}
+
+.section-about figure{
+  outline: 1px solid green;
+  
+
+}
 
 /* section-home */
+.section-home{
+
+}
+
 .section-home figure{
   background-image: url('../assets/images/lap.jpg');
   height: 70vh;
-  width: 98.9vw;
+  /* width: 100vw; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   filter:brightness(0.4);
 }
 
@@ -71,11 +87,9 @@ img[alt="about-img"]{
 .section-project{
   background-image: url('../assets/images/miku.jpg');
   height: 100vh;
-  width: 98.9vw;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   filter:brightness(0.4);
 }
 /* fin section-project */
