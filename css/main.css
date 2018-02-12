@@ -44,63 +44,52 @@ header nav ul a{
   position: relative;
   top: 12rem;
   bottom: auto;
-  color: #000;
+  color: #fff;
   font-weight: 600;
 }
-
-
-/* section-about */
-
-/*style footer*/
-
-
-#text-1{
-  top: auto;
-  bottom: 15px;
-}
-
-#text-2{
-  top: auto;
-  bottom: 25px;
-}
-
-#text-2 i:hover{
-  background-color: #fff;
-  color: #18bc9c;
-  transition-duration: 0.5s;
-}
-
-#text-3{
-  top: 8px;
-  bottom: auto;
-  left: 20px;
-}
-
-#text-3 a{
-  cursor: pointer;
-  color :#18bc9c;
-}
-
-#text-3 p a:hover{
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-#text-4{
-  padding: 25px;
-  font-family: 'Lato', sans-serif;  
-  text-align: center;
-}
-
-img[alt="about-img"]{
-  width: 50vw;
-}
-
-
-
 /* fin section-home */
 
 /* section-about */
+img[alt="about-img"]{
+  width: 50vw;
+}
+/* fin section-about */
+
+/* section-contact */
+.section-contact i{
+  padding-right: 1.2rem;
+  color: chocolate;
+}
+
+.section-contact i:hover{
+  transition: 1s;
+  color: brown;
+}
+/* fin section-contact */
+
+/* section-project */
+.section-project{
+  background-image: url('../assets/images/miku.jpg');
+  height: 100vh;
+  width: 98.9vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter:brightness(0.4);
+}
+/* fin section-project */
+
+/*footer*/
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+/* fin footer */
+
 @media screen and (min-width:991px){
 /* header */
   .logo {
@@ -108,14 +97,23 @@ img[alt="about-img"]{
     margin-left: auto;
   }
 
+  /* section-about */
   img[alt="about-img"]{
     margin-top:0.6rem;
     width: 20vw;
     height: 40vh;
   }
 
-  /* section-about */
   .section-about h4{
     margin-top: 3rem; 
   }
+
+  
+  /* section-contact */
+ .section-contact i{
+   padding: 4rem;
+   color: chocolate;
+ }
+
+ 
 }
