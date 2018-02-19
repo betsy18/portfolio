@@ -26,6 +26,42 @@ header nav ul a{
   background-color:#000;
   color: #fff;
 }
+
+hr { 
+  border-bottom: 0.3rem solid #754d51; 
+  border-top: 2px solid #754d51; 
+  border-left:none; 
+  border-right:none; 
+  height: 1vh; 
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 2rem;
+} 
+
+hr::after{
+  font-family: FontAwesome;
+  font-size: 2em;
+  content: "\f1ce";
+  display: inline-block;
+  position: relative;
+  bottom: 24px;
+  padding: 0.2rem;
+  
+}
+
+/* .fond-hr{
+  background-color: #c7b2b6;
+  text-align: center;
+  height: 15vh;
+} */
+
+
+#hr-gray::after{
+  color: #2c3e50;
+  background-color: #fff;
+}
 /* section-about */
 
 /* section-home */
@@ -52,11 +88,10 @@ header nav ul a{
 /* fin section-home */
 
 /* section-about */
-.section-about{
+/* .section-about{
   height: 70vh;
   position: relative;
-  top: 4rem;
-}
+} */
 
 .section-about img{
   border: 0.1rem solid #000;
@@ -70,7 +105,40 @@ img[alt="about-img"]{
 }
 /* fin section-about */
 
+/* section-skills */
+/* .section-skills{
+  height: 70vh;
+  position: relative;
+} */
+
+/* fin section-skills */
+
+/* section-project */
+.section-project {
+  
+  /* height: 70vh;
+  position: relative; */
+  /* position: relative;
+  background-image: url('../assets/images/miku.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter:drop-shadow(5); */
+  /* background-color: #837a76; */
+}
+/* section{
+  background-color: #837a76;
+} */
+
+/* fin section-project */
+
 /* section-contact */
+.section-contact{
+  height: 70vh;
+  position: relative;
+}
+
 .section-contact i{
   padding-right: 1.2rem;
   color: chocolate;
@@ -82,25 +150,13 @@ img[alt="about-img"]{
 }
 /* fin section-contact */
 
-/* section-project */
-.section-project{
-  background-image: url('../assets/images/miku.jpg');
-  height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  filter:brightness(0.4);
-}
-/* fin section-project */
+
 
 /*footer*/
 
-/* footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-} */
+footer {
+  padding: 1rem;
+}
 
 /* fin footer */
 
@@ -119,14 +175,14 @@ img[alt="about-img"]{
   }
 
   .section-about h4{
-    margin-top: 3rem; 
+    margin-top: 2rem; 
   }
 
   /* section-contact */
- .section-contact i{
+ /* .section-contact i{
    padding: 4rem;
    color: chocolate;
- }
+ } */
 
  
 }
