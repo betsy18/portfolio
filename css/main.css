@@ -5,13 +5,15 @@
   font-family: 'Raleway', sans-serif;
 }
 
+body{
+  background-color: #c7b2b6;
+}
 
 /* header */
 header nav ul a{
   background-color: rgba(0,0,0,0);
   color:  #fff;
   transition: 1s; 
-  margin-right: 1rem;
   font-size: 18px;
 }
 
@@ -33,7 +35,7 @@ hr {
   border-left:none; 
   border-right:none; 
   height: 1vh; 
-  width: 30%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -51,23 +53,16 @@ hr::after{
   
 }
 
-/* .fond-hr{
-  background-color: #c7b2b6;
-  text-align: center;
-  height: 15vh;
-} */
-
-
 #hr-gray::after{
   color: #2c3e50;
-  background-color: #fff;
+  background-color: #c7b2b6;
 }
 /* section-about */
 
 /* section-home */
 
 .section-home figure{
-  background-image: url('../assets/images/lap.jpg');
+  background-image: url('https://source.unsplash.com/collection/1759018');
   height: 70vh;
   width: 100vw;
   background-position: center center;
@@ -75,7 +70,6 @@ hr::after{
   background-size: cover;
   background-attachment: fixed;
   filter:brightness(0.4);
-  max-width: 100%;
 }
 
 .section-home h1{
@@ -88,10 +82,6 @@ hr::after{
 /* fin section-home */
 
 /* section-about */
-/* .section-about{
-  height: 70vh;
-  position: relative;
-} */
 
 .section-about img{
   border: 0.1rem solid #000;
@@ -106,60 +96,34 @@ img[alt="about-img"]{
 /* fin section-about */
 
 /* section-skills */
-/* .section-skills{
-  height: 70vh;
-  position: relative;
-} */
 
 /* fin section-skills */
 
 /* section-project */
-.section-project {
-  
-  /* height: 70vh;
-  position: relative; */
-  /* position: relative;
-  background-image: url('../assets/images/miku.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  filter:drop-shadow(5); */
-  /* background-color: #837a76; */
-}
-/* section{
-  background-color: #837a76;
-} */
 
 /* fin section-project */
 
 /* section-contact */
-.section-contact{
-  height: 70vh;
-  position: relative;
-}
-
 .section-contact i{
   padding-right: 1.2rem;
-  color: chocolate;
+  color: #383130;
 }
 
 .section-contact i:hover{
   transition: 1s;
-  color: brown;
+  color:#837a76;
 }
 /* fin section-contact */
-
-
 
 /*footer*/
 
 footer {
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 /* fin footer */
 
+/* media */
 @media screen and (min-width:991px){
 /* header */
   .logo {
@@ -178,11 +142,4 @@ footer {
     margin-top: 2rem; 
   }
 
-  /* section-contact */
- /* .section-contact i{
-   padding: 4rem;
-   color: chocolate;
- } */
-
- 
 }
