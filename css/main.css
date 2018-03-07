@@ -101,6 +101,10 @@ img[alt="about-img"]{
 
 /* section-project */
 
+.section-project {
+  margin-bottom: 5rem; 
+}
+
 /* fin section-project */
 
 /* section-contact */
@@ -139,7 +143,6 @@ footer {
   }
 
   .section-about h4{
-    margin-top: 2rem; 
+    margin-top: 3rem; 
   }
-
 }
