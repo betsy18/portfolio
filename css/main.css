@@ -105,12 +105,16 @@ img[alt="about-img"]{
   margin-bottom: 5rem; 
 }
 
+.section-project .btn{
+  margin-top: 1rem;
+}
 /* fin section-project */
 
 /* section-contact */
 .section-contact i{
   padding-right: 1.2rem;
   color: #383130;
+  margin-bottom: 1rem;
 }
 
 .section-contact i:hover{
