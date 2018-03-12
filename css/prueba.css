@@ -26,6 +26,8 @@
   width: 220px;
   height: 220px;
   border-radius: 50%;
+  /* ads */
+  margin-top:3rem;
 }
 .ih-item.circle .img {
   position: relative;
