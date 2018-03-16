@@ -15,19 +15,19 @@ header nav ul a{
 
 /* clases reutilizables */
 .black{
-  background-color:#000;
+  background-color:#393232;
   color: #fff;
   transition: 1s;
 }
 
 .black-toggle{
-  background-color:#000;
+  background-color:#393232;
   color: #fff;
 }
 
 hr { 
-  border-bottom: 0.2rem solid #754d51; 
-  border-top: 1px solid #754d51; 
+  border-bottom: 0.2rem solid #8D6262; 
+  border-top: 1px solid #8D6262; 
   border-left:none; 
   border-right:none; 
   height: 0.5vh; 
@@ -52,6 +52,11 @@ hr::after{
 #hr-gray::after{
   color: #2c3e50;
   background-color: #fff;
+}
+
+#hr-pink::after{
+  color: #2c3e50;
+  background-color: #ED8D8D;
 }
 /* section-about */
 
@@ -98,6 +103,11 @@ img[alt="about-img"]{
 /* fin section-about */
 
 /* section-skills */
+.section-skills{
+  background-color: #ED8D8D;
+  height: 50vh;
+}
+
 /* Hexagono*/
 .hexagono {
   background: rgba(193, 216, 235, 0.8); /*#888;*/
@@ -167,6 +177,9 @@ img[alt="about-img"]{
 /* fin section-project */
 
 /* section-contact */
+.section-contact{
+  background-color: #ED8D8D;
+}
 
 .section-contact i{
   padding-right: 1.2rem;
