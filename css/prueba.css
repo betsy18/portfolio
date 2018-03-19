@@ -1,4 +1,4 @@
-.ih-item {
+/* .ih-item {
   position: relative;
   -webkit-transition: all 0.70s ease-in-out;
   -moz-transition: all 0.70s ease-in-out;
@@ -26,7 +26,6 @@
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  /* ads */
   margin-top:3rem;
 }
 .ih-item.circle .img {
@@ -145,4 +144,5 @@
   -ms-transform: translateY(50px) scale(0.5);
   -o-transform: translateY(50px) scale(0.5);
   transform: translateY(50px) scale(0.5);
-}
+} */
+
