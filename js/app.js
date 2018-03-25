@@ -1,6 +1,5 @@
 $(document).ready(() => {
   $('nav').removeClass('black-toggle');
-  // $('nav').removeClass('black');
   $(window).on('scroll', () => {
     if ($(window).scrollTop()) {
       $('nav').addClass('black');
@@ -9,6 +8,13 @@ $(document).ready(() => {
     }
   });
 
+  $('.arrow').on('click', function(event){
+		event.preventDefault();
+		var id = $(this).attr('href'),
+				tOff = $(id).offset().top;
+		$('html, body').animate({scrollTop: tOff}, 600);
+	});
+ 
   var canvas = document.querySelector('#canvas'),
     ctx = canvas.getContext('2d');
 
