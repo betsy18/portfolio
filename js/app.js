@@ -22,7 +22,7 @@ $(document).ready(() => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  // Configuration, Play with these
+ 
   var config = {
     particleNumber: 800,
     maxParticleSize: 10,
@@ -43,7 +43,7 @@ $(document).ready(() => {
       {r: 249, g: 212, b: 35}]
   };
 
-  // Some Variables hanging out
+ 
   var particles = [],
     centerX = canvas.width / 2,
     centerY = canvas.height / 2,
@@ -56,7 +56,7 @@ $(document).ready(() => {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
     };
 
-  // Particle Constructor
+
   var Particle = function Particle(x, y) {
     // X Coordinate
     this.x = x || Math.round(Math.random() * canvas.width);
@@ -72,9 +72,6 @@ $(document).ready(() => {
     this.d = Math.round(Math.random() * 360);
   };
 
-  // Provides some nice color variation
-  // Accepts an rgba object
-  // returns a modified rgba object or a rgba string if true is passed in for argument 2
   var colorVariation = function colorVariation(color, returnString) {
     var r, g, b, a, variation;
     r = Math.round(Math.random() * config.colorVariation - config.colorVariation / 2 + color.r);

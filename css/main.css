@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  -webkit-overflow-scrolling: #000000;
 }
 
 img[alt="brand"] {
@@ -37,8 +38,6 @@ header nav ul a {
   color: #fff;
 }
 
-/* menu */
-
 /* colores */
 
 .top-ribbon{
@@ -69,11 +68,11 @@ header nav ul a {
   background-color: #c7f465
 }
 
-.pink-background {
+.red-background {
   background-color: #ff4e50;
 }
 
-.dark-pink-background {
+.violet-background {
   background-color: #c7b2b6;
 }
 
@@ -110,17 +109,13 @@ header nav ul a {
 }
 
 /* section-home */
-
 canvas {
   height: 100vh;
   width: 100vw;
-  /* bottom: 1rem; */
 }
 
 .section-home figure {
-  /* outline: 1px solid red; */
-  /* background-color: #000000; */
-  height: 99vh;
+  height: 100vh;
   width: 100vw;
   opacity: 0.8;
   position: absolute;
@@ -131,7 +126,7 @@ canvas {
 
 .section-home h1 {
   position: relative;
-  top: 18rem;
+  top: 11rem;
   bottom: auto;
   color: #fff;
   font-weight: 600;
@@ -146,22 +141,9 @@ canvas {
 
 /* fin section-home */
 
+/* section-about */
 .section-about{
-  outline: 1px solid red;
-  height: 100vh;
-  position: relative;
-}
-.section-contact{
-  outline: 1px solid red;
-  position: relative;
-}
-.section-project{
-  outline: 1px solid red;
-  position: relative;
-}
-.section-skills{
-  outline: 1px solid red;
-  position: relative;
+  padding-top: 3rem;
 }
 
 .section-about img {
@@ -176,29 +158,33 @@ img[alt="about-img"] {
 }
 
 .section-about h4 {
-  text-align: justify;
+  text-align: center;
   margin: 1rem;
 }
 
 /* fin section-about */
 
+/* section-skills */
 .section-skills {
-  margin-top: 5rem;
   height: 100vh;
-  /* background-color: violet; */
+  background-color: #bce4e6;
 }
 
 .section-skills img {
-  /* width: 5vw; */
-  padding-right: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-top: 4rem;
-  height: 6vh;
-  text-align: center;
+  height: 8vh;
+  text-align: center; 
+}
+
+.section-skills img:hover{
+  filter: sepia(70%);
 }
 
 hr {
-  border-bottom: 0.2rem solid #8D6262;
-  border-top: 1px solid #8D6262;
+  border-bottom: 0.2rem solid #187699;
+  border-top: 1px solid #187699;
   margin-bottom: 1rem;
   border-left: none;
   border-right: none;
@@ -212,17 +198,19 @@ hr {
 
 /* section-project */
 
-.section-project {
-  margin-top: 3rem;
-  height: 100vh;
+.card{
+  width: 14rem;
+  overflow: hidden;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 2px #837a76;
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
 }
 
 .section-project h1 {
   padding-bottom: 1rem;
-}
-
-.section-project .btn {
-  margin-top: 1rem;
 }
 
 .section-project img {
@@ -234,8 +222,12 @@ hr {
 /* section-contact */
 
 .section-contact {
-  height: 100vh;
-  margin-top: 3rem;
+  height: 80vh;
+  background-color: #fecfc1;
+}
+
+.section-contact h1{
+  margin-top: 4rem;
 }
 
 .section-contact i {
@@ -259,14 +251,42 @@ footer {
 
 /* fin footer */
 
+
 /* media query */
 
-@media screen and (min-width:991px) {
-  /* header */
-  .logo {
-    margin-right: 20rem;
-    margin-left: auto;
+@media (min-width: 768px) {
+  /* section skills */
+  .section-skills img {
+    height: 11vh;
   }
+
+  /* section-project */
+  .section-project .btn {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  hr{
+    width: 15%
+  }
+}
+
+
+@media screen and (min-width:991px) {
+  /* general */
+  .phone {
+    display: none;
+  }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
+  /* section-home */
+  .section-home h1 {
+    top: 18rem;
+  }
+
   /* section-about */
   img[alt="about-img"] {
     margin-top: 0.6rem;
@@ -277,15 +297,21 @@ footer {
     width: 8%;
   }
   .section-about {
-    height: 60vh;
+    height: 100vh;
   }
   .section-about h4 {
     margin-top: 4rem;
     text-align: justify;
     line-height: 2rem;
   }
+  
   .section-skills img {
-    height: 8vh;
+    height: 12vh;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .card{
+    margin-top: 2rem;
   }
   .section-project img {
     margin-top: 2rem;
@@ -293,5 +319,8 @@ footer {
   }
   .section-project .btn {
     margin-bottom: 4rem;
+  }
+  .section-contact h1{
+    margin-top: 6rem;
   }
 }
