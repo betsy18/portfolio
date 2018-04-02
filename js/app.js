@@ -22,11 +22,11 @@ $(document).ready(() => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
- 
+  // 
   var config = {
-    particleNumber: 800,
+    particleNumber: 140,
     maxParticleSize: 10,
-    maxSpeed: 40,
+    maxSpeed: 20,
     colorVariation: 50
   };
 
