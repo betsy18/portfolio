@@ -214,24 +214,6 @@ img[alt="about-img"] {
   overflow: hidden;
 }
 
-.card:hover{
-  /* box-shadow: 1px 1px 2px #837a76;
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2); */
-  /* background: #640000;
-  width: 230px; 
-  height: 200px;
-    border: dotted 2px #571717; 
-  padding: 10px;  */
-  /* overflow: auto; Por si el texto es más grande, se pueda leer con scroll */
-  /* font-family: 'Marvel'; 
-  font-size: 13px; 
-  text-align: justify; 
-  background-color: #111; 
-  color: #fff; 
-  transition-duration: 2s; */
-}
-
 
 .section-project img {
   height: 17vh;
@@ -328,7 +310,7 @@ footer {
   }
   
   .section-skills img {
-    height: 12vh;
+    height: 11vh;
     padding-right: 3rem;
     padding-left: 3rem;
   }
